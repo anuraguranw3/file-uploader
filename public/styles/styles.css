@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log {
+    float: right;
+    padding: 7px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+
+/* home page */
+
+.user {
+    padding: 5px 10px;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.no-folder {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-folder-button {
+    padding: 5px 10px;
+    text-decoration: underline;
+}
+
+.folders {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.folders>h3 {
+    font-size: 1.5rem;
+}
+
+.folders ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.folders ul li {
+    padding: 10px;
+}
+
+.folders ul li a {
+    font-size: 1.3rem;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+/* folder page */
+
+.folder-name {
+    padding: 5px 10px;
+}
+
+.folder-delete-form {
+    padding: 5px 10px;
+}
+
+.folder-delete-form button {
+    padding: 5px 10px;
+    color: black;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.folder-rename-form {
+    width: 280px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.folder-rename-form>label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.folder-rename-form>input {
+    padding: 3px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.folder-rename-form>button {
+    width: 120px;
+    padding: 5px;
+    color: black;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.upload-image-form {
+    width: 280px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upload-image-form>label {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.upload-image-form>input {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.upload-image-form>button {
+    width: 120px;
+    padding: 5px;
+    color: black;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.upload-image-form > p {
+    color: rgb(178, 178, 178);
+}
+
+.no-image {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Images  */
+
+.images {
+    margin-top: 10px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 5px 10px 5px;
+}
+
+.images h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.images ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+}
+
+.images ul li {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.images .delete-btn {
+    padding: 4px 8px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.images .download-btn {
+    width: 45%;
+    text-align: center;
+    padding: 4px 8px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Sign up page  */
+
+.sign-up-form {
+    width: 290px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.sign-up-form h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sign-up-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.sign-up-form input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.sign-up-form button {
+    padding: 5px 10px;
+    background-color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sign-up-form h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sign-up-form h3>a {
+    text-decoration: underline;
+}
+
+/* Login page  */
+
+.login-form {
+    width: 290px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.login-form h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.login-form button {
+    padding: 5px 10px;
+    background-color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.login-form h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.login-form h3>a {
+    text-decoration: underline;
+}
+
+.create-folder-form {
+    width: 290px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.create-folder-form h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.create-folder-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.create-folder-form input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.create-folder-form button {
+    padding: 5px 10px;
+    background-color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
